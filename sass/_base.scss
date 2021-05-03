@@ -1,0 +1,46 @@
+//COLORS
+$color-primary: #03045e;
+$color-secondary: #023e8a;
+$color-grey-light: #edf0f2;
+
+//FONTS
+$heading-primary: 5rem;
+$heading-secondary: 3.5rem;
+$letter-spacing: 1.5rem;
+
+//PADDING
+$section-padding: 5rem;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px;
+
+  @media only screen and (max-width: 27.18em) {
+    font-size: 50%; //1rem = 8px
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 95vh;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+
+  @media only screen and (min-width: 125em) {
+    max-width: 200rem;
+    margin: 0 auto;
+  }
+}

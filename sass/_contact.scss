@@ -1,0 +1,41 @@
+.contact {
+  grid-column: 1 / -1;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary, 0.8),
+    rgba($color-secondary, 0.8)
+  );
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+  justify-items: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  transform: translateX(6%);
+  justify-items: flex-start;
+
+  width: 100%;
+
+  @media only screen and (max-width: 64em) {
+    grid-template-columns: repeat(2, 1fr);
+    transform: translateX(0);
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: 1fr;
+    transform: translateX(0);
+  }
+}
+
+.form-submit {
+  @media only screen and (max-width: 64em) {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}

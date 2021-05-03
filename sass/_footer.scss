@@ -1,0 +1,27 @@
+.footer {
+  grid-column: 1 / -1;
+  background-color: black;
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 5rem;
+}
+
+.footer-navigation {
+  width: 100%;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  justify-items: center;
+}
+
+.legal {
+  &__text {
+    color: #fff;
+  }
+}
