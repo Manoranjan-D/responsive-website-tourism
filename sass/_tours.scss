@@ -70,8 +70,14 @@
   &__content {
     height: 30rem;
     padding: 1.5rem;
-
-    background: linear-gradient(#ffcea7, #b1b1b1);
+    background: linear-gradient(
+      to left bottom,
+      #ffaa4f,
+      #ffb86c,
+      #ffc689,
+      #ffd4a6,
+      #ffe2c4
+    );
     clip-path: polygon(0 0, 100% 0%, 100% 0, 0 100%);
     box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.5);
     transition: all 0.3s;
