@@ -10,6 +10,7 @@
 .contact-box {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr);
+  grid-gap: clamp(1.6rem, 4vw, 5rem);
   justify-items: center;
 }
 
@@ -17,19 +18,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  transform: translateX(6%);
   justify-items: flex-start;
-
-  width: 100%;
 
   @media only screen and (max-width: 64em) {
     grid-template-columns: repeat(2, 1fr);
-    transform: translateX(0);
   }
 
   @media only screen and (max-width: 37.5em) {
     grid-template-columns: 1fr;
-    transform: translateX(0);
   }
 }
 

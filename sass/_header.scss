@@ -1,4 +1,5 @@
 .header {
+  grid-column: 1/-1;
   background-image: linear-gradient(
       to right,
       rgba($color-primary, 0.6),
@@ -7,8 +8,6 @@
     url('../img/c.jpg');
   background-size: cover;
   background-position: center;
-
-  grid-column: 1/-1;
 
   display: flex;
   flex-direction: column;
@@ -19,20 +18,7 @@
 .heading {
   background-color: rgba(0, 0, 0, 0.3);
   margin: auto;
-  padding: 2.5rem;
-  @media only screen and (max-width: 38.75em) {
-    width: 100%;
-  }
-}
-
-//TEST
-.mobile__nav {
-  display: none;
-  padding: 2rem;
-
-  @media only screen and (max-width: 31.87em) {
-    display: block;
-  }
+  padding: clamp(1rem, 4vw, 3rem);
 }
 
 .header-navigation {
@@ -40,16 +26,12 @@
   justify-content: space-around;
   align-items: center;
 
-  font-size: 1.8rem;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   color: #fff;
 
-  @media only screen and (max-width: 41.25em) {
-    font-size: 1.6rem;
-  }
-  @media only screen and (max-width: 31.87em) {
-    justify-content: space-between;
+  @media only screen and (max-width: 40em) {
+    justify-content: flex-start;
   }
 }
 
@@ -62,10 +44,6 @@
     padding: 2rem;
     transition: background-color 0.5s;
 
-    @media only screen and (max-width: 41.25em) {
-      padding: 1rem;
-    }
-
     &:hover {
       background-color: $color-primary;
     }
@@ -75,13 +53,22 @@
 .nav-flex {
   display: flex;
 
-  @media only screen and (max-width: 31.87em) {
+  @media only screen and (max-width: 40em) {
     display: none;
   }
 }
 
+.mobile__nav {
+  display: none;
+  padding: 1rem;
+  margin-left: 2rem;
+
+  @media only screen and (max-width: 40em) {
+    display: block;
+  }
+}
+
 .logo {
-  font-size: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 900;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Responsive tourism website" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
@@ -17,9 +18,8 @@
       <!-- HEADER -->
       <header class="header">
         <nav class="header-navigation" aria-label="navigation">
-          <div class="logo">Tours&Travells</div>
-
           <img src="img/list.svg" alt="mobile-icon" class="mobile__nav" />
+          <div class="logo">Tours&Travells</div>
 
           <ul class="nav nav-flex">
             <a href="" class="nav__link">
@@ -76,18 +76,22 @@
               class="img-box--4 img-outset"
             />
           </div>
-          <p class="pharagraph grid-row">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem natus
-            fugit voluptatem corrupti nam sapiente mollitia, culpa unde
-            necessitatibus eum expedita explicabo, architecto eveniet cumque
-            commodi officiis fuga quo voluptatibus.
+
+          <div class="about-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem natus
+              fugit voluptatem corrupti nam sapiente mollitia, culpa unde
+              necessitatibus eum expedita explicabo, architecto eveniet cumque
+              commodi officiis fuga quo voluptatibus.
+            </p>
             <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem natus
-            fugit voluptatem corrupti nam sapiente mollitia, culpa unde
-            necessitatibus eum expedita explicabo, architecto eveniet cumque
-            commodi officiis fuga quo voluptatibus.
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem natus
+              fugit voluptatem corrupti nam sapiente mollitia, culpa unde
+              necessitatibus eum expedita explicabo, architecto eveniet cumque
+              commodi officiis fuga quo voluptatibus.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -100,61 +104,73 @@
 
           <div class="tour">
             <div class="tour__img tour__img--1">
-              <div class="tour__title">North India</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">North India</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
 
           <div class="tour">
             <div class="tour__img tour__img--2">
-              <div class="tour__title">South India</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">South India</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
 
           <div class="tour">
             <div class="tour__img tour__img--3">
-              <div class="tour__title">Nature</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">Nature</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
 
           <div class="tour">
             <div class="tour__img tour__img--4">
-              <div class="tour__title">Adventures</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">Adventures</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
 
           <div class="tour">
             <div class="tour__img tour__img--5">
-              <div class="tour__title">Island</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">Island</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
 
           <div class="tour">
             <div class="tour__img tour__img--6">
-              <div class="tour__title">International</div>
-              <div class="tour__description">
-                Lorem ipsum | dolor sit amet | consectetur
+              <div class="tour__content">
+                <div class="tour__title">International</div>
+                <div class="tour__description">
+                  Lorem ipsum | dolor sit amet | consectetur
+                </div>
+                <div class="tour__price">Starting From $500</div>
               </div>
-              <div class="tour__price">Starting From $500</div>
             </div>
           </div>
         </div>
@@ -190,7 +206,7 @@
           </div>
 
           <div class="review">
-            <img src="./img/user-2.jpg" alt="user-1" class="review__photo" />
+            <img src="./img/user-2.jpg" alt="user-2" class="review__photo" />
             <div class="review__name">Stefan</div>
             <div class="rating">
               <img src="img/star.svg" alt="star" />
@@ -206,7 +222,7 @@
           </div>
 
           <div class="review hide">
-            <img src="./img/user-1.jpg" alt="user-1" class="review__photo" />
+            <img src="./img/user-3.jpg" alt="user-3" class="review__photo" />
 
             <div class="review__name">Alex</div>
             <div class="rating">
@@ -256,9 +272,6 @@
               </a>
               <a href="" class="nav__link">
                 <li class="nav__item">Contact</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">Login</li>
               </a>
             </ul>
           </nav>

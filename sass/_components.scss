@@ -1,10 +1,9 @@
 .btn {
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 4px;
   font-family: inherit;
   font-size: inherit;
-
   background-color: $color-primary;
   color: #fff;
   border: none;
@@ -24,7 +23,7 @@
   font-size: inherit;
   background-color: $color-grey-light;
   border: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 4px;
   border-bottom: 4px solid $color-primary;
   width: 100%;
@@ -46,7 +45,6 @@
 .section-heading {
   grid-column: 1/-1;
   text-align: center;
-  margin-bottom: 2.5rem;
 
   &--white {
     color: white;
@@ -71,15 +69,7 @@
 }
 
 section > :first-child {
-  max-width: 140rem;
-  margin: 8rem auto;
-  padding: 0 5rem;
-
-  @media only screen and (max-width: 26.26em) {
-    padding: 0 3rem;
-  }
-}
-
-.pharagraph {
-  font-size: 2rem;
+  margin: 5rem auto;
+  padding: 0 2.4rem;
+  max-width: clamp(50rem, 85vw, 130rem);
 }

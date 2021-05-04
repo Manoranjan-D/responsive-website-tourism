@@ -1,26 +1,9 @@
 .heading__primary {
-  font-size: 5rem;
-  letter-spacing: 1.5rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  letter-spacing: clamp(0.5rem, 1vw, 1.5rem);
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
-
-  @media only screen and (max-width: 90.62em) {
-    font-size: 4.5rem;
-  }
-  @media only screen and (max-width: 64.62em) {
-    font-size: 4rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: 3.5rem;
-    letter-spacing: 1rem;
-  }
-
-  @media only screen and (max-width: 38.75em) {
-    font-size: 3rem;
-    letter-spacing: 1rem;
-  }
 
   &--main {
     display: block;
@@ -36,20 +19,9 @@
 }
 
 .heading__secondary {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
-  letter-spacing: 1rem;
+
+  letter-spacing: clamp(0.3rem, 1vw, 1rem);
   text-transform: uppercase;
-
-  @media only screen and (max-width: 56.25em) {
-    font-size: 2.5rem;
-  }
-  @media only screen and (max-width: 27.18em) {
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-  }
-}
-
-.paragraph {
-  font-size: 1.6rem;
 }

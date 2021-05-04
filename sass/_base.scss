@@ -3,14 +3,6 @@ $color-primary: #03045e;
 $color-secondary: #023e8a;
 $color-grey-light: #edf0f2;
 
-//FONTS
-$heading-primary: 5rem;
-$heading-secondary: 3.5rem;
-$letter-spacing: 1.5rem;
-
-//PADDING
-$section-padding: 5rem;
-
 *,
 *::before,
 *::after {
@@ -22,10 +14,6 @@ $section-padding: 5rem;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px;
-
-  @media only screen and (max-width: 27.18em) {
-    font-size: 50%; //1rem = 8px
-  }
 }
 
 body {

@@ -7,17 +7,22 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, 1fr));
   align-items: center;
-  grid-column-gap: 8rem;
+  grid-gap: clamp(1.6rem, 6vw, 8rem);
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 47em) {
     grid-template-columns: repeat(1, minmax(min-content, 1fr));
-    grid-row-gap: 6rem;
   }
 }
 
-.grid-row {
-  @media only screen and (max-width: 56.25em) {
+.about-content {
+  font-size: clamp(1.6rem, 1.5vw, 2rem);
+
+  @media only screen and (max-width: 47em) {
     grid-row: 2/3;
+  }
+
+  & > :not(:last-child) {
+    margin-bottom: clamp(1rem, 4.5vw, 8rem);
   }
 }
 
@@ -54,8 +59,8 @@
   transition: all 0.3s;
 
   &:hover {
-    outline: 1rem solid $color-primary;
-    outline-offset: 1rem;
+    outline: 0.7rem solid $color-primary;
+    outline-offset: 0.7rem;
     transform: scale(0.9);
   }
 }

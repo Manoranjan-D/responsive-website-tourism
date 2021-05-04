@@ -6,13 +6,9 @@
 .reviews-box {
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  grid-gap: 5rem;
+  grid-gap: clamp(1.6rem, 4vw, 5rem);
 
-  @media only screen and (max-width: 53.12em) {
-    grid-gap: 2rem;
-  }
-
-  @media only screen and (max-width: 40.62em) {
+  @media only screen and (max-width: 47.5em) {
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
   }
 
@@ -29,47 +25,37 @@
 
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
   height: 30rem;
-  padding: 2.5rem;
+  padding: clamp(1.5rem, 1.5vw, 2.5rem);
   transition: all 0.3s;
   background-color: #fff;
 
-  @media only screen and (max-width: 53.12em) {
-    padding: 1.5rem;
-  }
-
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   & > * {
-    padding: 1rem;
-
-    @media only screen and (max-width: 53.12em) {
-      padding: 0.5rem;
-    }
+    padding: clamp(0.5rem, 1vw, 1rem);
   }
 
   &:hover &__photo {
-    transform: translateY(0);
+    transform: translateY(8px);
   }
 
   &__photo {
-    max-width: 40%;
-
+    max-width: 50%;
+    max-height: 50%;
     border-radius: 50%;
-
     transition: transform 0.3s;
   }
 
   &__name {
-    display: block;
     font-weight: 900;
   }
 }
 
 //////TESTING
 .hide {
-  @media only screen and (max-width: 40.62em) {
+  @media only screen and (max-width: 47.5em) {
     display: none;
   }
 }

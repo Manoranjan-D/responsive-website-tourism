@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  grid-gap: 5rem;
+  grid-gap: clamp(1.6rem, 4vw, 5rem);
 }
 
 .footer-navigation {
@@ -23,5 +23,7 @@
 .legal {
   &__text {
     color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
   }
 }
