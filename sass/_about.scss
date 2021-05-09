@@ -1,5 +1,4 @@
 .about {
-  grid-column: 1 / -1;
   background-color: $color-grey-light;
 }
 
@@ -16,6 +15,7 @@
 
 .about-content {
   font-size: clamp(1.6rem, 1.5vw, 2rem);
+  max-height: 100%;
 
   @media only screen and (max-width: 47em) {
     grid-row: 2/3;

@@ -67,9 +67,3 @@
     object-fit: cover;
   }
 }
-
-section > :first-child {
-  margin: 5rem auto;
-  padding: 0 2.4rem;
-  max-width: clamp(50rem, 85vw, 130rem);
-}
