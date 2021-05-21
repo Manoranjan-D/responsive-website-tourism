@@ -7,10 +7,20 @@
   --color-gray-dark: #e9ecef;
 
   --section-padding: clamp(4rem, 10vw, 12rem) 0rem;
-  --num-of-col: 2;
 
-  @media only screen and(max-width:50em) {
-    --num-of-col: 1;
+  //GRID
+  --two-col-layout: 2;
+  --three-col-layout: 3;
+
+  @media only screen and (max-width: 56.25em) {
+    --two-col-layout: 1;
+  }
+  @media only screen and (max-width: 59em) {
+    --three-col-layout: 2;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    --three-col-layout: 1;
   }
 }
 

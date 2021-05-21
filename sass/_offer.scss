@@ -1,6 +1,6 @@
 .section-offer {
   padding: var(--section-padding);
-  background: url('../img/offer-img.jpg') fixed no-repeat center !important;
+  background: url('../img/offer-img.jpg') fixed no-repeat center;
   background-size: cover;
   position: relative;
   color: #fff;
@@ -13,13 +13,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(73, 202, 228, 0.45);
+    background: rgba(2, 60, 136, 0.5);
     z-index: -1;
   }
 }
 .offer-box {
   display: grid;
-  grid-template-columns: repeat(var(--num-of-col), minmax(20rem, 1fr));
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
   gap: 5rem;
   justify-items: center;
   align-items: center;

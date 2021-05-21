@@ -9,6 +9,7 @@
   color: #000;
   border: none;
   transition: background-color 0.4s;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-blue-lighter-1);

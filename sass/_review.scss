@@ -10,7 +10,10 @@
 
 .review-cards {
   display: grid;
-  grid-template-columns: repeat(var(--num-of-col), minmax(20rem, 1fr));
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
   row-gap: 10rem;
   column-gap: 5rem;
   justify-items: center;
@@ -28,6 +31,10 @@
   max-width: 40rem;
   padding: 0 2.4rem 2rem 2.4rem;
   position: relative;
+
+  &:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  }
 
   &__img {
     max-width: 100%;

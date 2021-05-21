@@ -16,7 +16,10 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-template-columns: repeat(
+      var(--three-col-layout),
+      minmax(min-content, 1fr)
+    );
     gap: 3rem;
   }
 }
@@ -31,9 +34,15 @@
   padding-bottom: 2.5rem;
   color: #000;
 
+  &:hover .t-card__img {
+    filter: brightness(0.8);
+  }
+
   &__img {
     max-width: 100%;
     height: auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
 
   &__content {
@@ -61,7 +70,7 @@
 
     & > * {
       padding: 0.2rem 1rem;
-      background-color: var(--color-blue-lighter-2);
+      background-color: rgba(73, 202, 228, 0.7);
       border-radius: 2rem;
       display: flex;
       justify-content: center;

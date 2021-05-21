@@ -4,7 +4,10 @@
 
 .about-box {
   display: grid;
-  grid-template-columns: repeat(var(--num-of-col), minmax(min-content, 1fr));
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
   gap: 2rem;
 
   &__heading {
