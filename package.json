@@ -5,10 +5,10 @@
   "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.css -o css/style.css",
     "parcel": "parcel build index.html -d dist",
     "build": "npm run prefix:css && npm run parcel",
-    "run": "parcel index.html"
+    "dev": "parcel index.html"
   },
   "author": "Manoranjan",
   "license": "ISC",
@@ -19,5 +19,8 @@
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
   }
 }

@@ -4,284 +4,526 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Responsive tourism website" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Tours&Travells</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>Turismo - Explore the world</title>
   </head>
   <body>
-    <div class="container">
-      <!-- HEADER -->
-      <header class="header" id="home">
-        <nav class="header-navigation" aria-label="navigation">
-          <img src="img/list.svg" alt="mobile-icon" class="mobile__nav" />
-          <div class="logo">Tours&Travells</div>
-
-          <ul class="nav nav-flex">
-            <a href="#" class="nav__link">
-              <li class="nav__item">Home</li>
-            </a>
-            <a href="#about" class="nav__link">
-              <li class="nav__item">About</li>
-            </a>
-            <a href="#tours" class="nav__link">
-              <li class="nav__item">Tours</li>
-            </a>
-            <a href="#contact" class="nav__link">
-              <li class="nav__item">Contact</li>
-            </a>
-            <a href="#" class="nav__link">
-              <li class="nav__item">Login</li>
-            </a>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">Turismo</div>
+          <img
+            src="img/nav-icon.svg"
+            class="nav-icon"
+            alt="navigation icon"
+            width="30"
+            height="30"
+          />
+          <ul>
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#tours"> Tours </a>
+            </li>
+            <li>
+              <a href="#offers"> Offers </a>
+            </li>
+            <li>
+              <button class="btn">Book Now</button>
+            </li>
           </ul>
-        </nav>
-
-        <div class="heading">
-          <h1 class="heading__primary">
-            <span class="heading__primary--main">BEGIN YOUR JOURNEY</span>
-            <span class="heading__primary--sub">EXPLORE THE WORLD</span>
-          </h1>
         </div>
-      </header>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              life is short and world is wide the sooner you start exploring it
+              the better
+            </h1>
+            <button class="btn">Explore now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="wrapper">
+            <h3>Destination</h3>
+            <div class="custom-select">
+              <select id="destination">
+                <option value="england">England</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="india">India</option>
+                <option value="india">Spain</option>
+                <option value="maldives">Maldives</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Date</h3>
+            <div class="custom-date">
+              <input type="date" id="date" />
+              <img src="./img/calendar.svg" alt="" class="calender-icon" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Average Price</h3>
+            <div class="custom-select">
+              <select id="destination">
+                <option value="$200">$200 - $500</option>
+                <option value="$500">$500 - $1000</option>
+                <option value="$1000">$1000 - $2000</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <button class="btn">Search</button>
+        </div>
+      </section>
 
       <!-- SECTION ABOUT -->
-      <section class="about" id="about">
-        <div class="about-box section-container">
-          <div class="section-heading">
-            <h2 class="heading__secondary">Tour With Us</h2>
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Explore all corners of the world with us
+            </div>
           </div>
-          <div class="img-box">
-            <img
-              src="./img/about-1.jpg"
-              alt="about"
-              class="img-box--1 img-inset"
-            />
-            <img
-              src="./img/about-2.jpeg"
-              alt="about"
-              class="img-box--2 img-outset"
-            />
-            <img
-              src="./img/about-3.jpg"
-              alt="about"
-              class="img-box--3 img-inset"
-            />
-            <img
-              src="./img/about-4.jpeg"
-              alt="about"
-              class="img-box--4 img-outset"
-            />
-          </div>
-
-          <div class="about-content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem natus
-              fugit voluptatem corrupti nam sapiente mollitia, culpa unde
-              necessitatibus eum expedita explicabo, architecto eveniet cumque
-              commodi officiis fuga quo voluptatibus.
-            </p>
+          <div class="about-box__content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            dolores at laborum dicta ab veniam autem non deserunt qui dolor
+            repellendus, pariatur facilis soluta consequatur magnam hic eveniet
+            modi eaque Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Impedit suscipit totam quo eveniet dicta explicabo.
+            <button class="btn btn--secondary">Read More</button>
           </div>
         </div>
       </section>
 
       <!-- SECTION TOURS -->
-      <section class="tours" id="tours">
-        <div class="tours-box section-container">
-          <div class="section-heading section-heading--white">
-            <h2 class="heading__secondary">Our Tours</h2>
-          </div>
+      <section class="section-tours" id="tours">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+            <h2 class="heading heading--2 color-blue">our top tours</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+              ducimus illum corporis magni voluptas, ex eum dolorum quia
+              officia! Deleniti quia ut.
+            </p>
+          </header>
 
-          <div class="tour">
-            <div class="tour__img tour__img--1">
-              <div class="tour__content">
-                <div class="tour__title">North India</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+          <article class="tour-box__cards">
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/england.jpg"
+                alt="england"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ENGLAND</h3>
+                  <p class="price">$500</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">5 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="tour">
-            <div class="tour__img tour__img--2">
-              <div class="tour__content">
-                <div class="tour__title">South India</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/france.jpg"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">FRANCE</h3>
+                  <p class="price">$500</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">6 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="tour">
-            <div class="tour__img tour__img--3">
-              <div class="tour__content">
-                <div class="tour__title">Nature</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/itally.jpg"
+                alt="ITALY"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ITALY</h3>
+                  <p class="price">$500</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="tour">
-            <div class="tour__img tour__img--4">
-              <div class="tour__content">
-                <div class="tour__title">Adventures</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/india.jpg"
+                alt="india"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">INDIA</h3>
+                  <p class="price">$500</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">7 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="tour">
-            <div class="tour__img tour__img--5">
-              <div class="tour__content">
-                <div class="tour__title">Island</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/spain.jpg"
+                alt="spain"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">SPAIN</h3>
+                  <p class="price">$400</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">5 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.7k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="tour">
-            <div class="tour__img tour__img--6">
-              <div class="tour__content">
-                <div class="tour__title">International</div>
-                <div class="tour__description">
-                  Lorem ipsum | dolor sit amet | consectetur
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/maldives.jpg"
+                alt="maldives"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">MALDIVES</h3>
+                  <p class="price">$300</p>
                 </div>
-                <div class="tour__price">Starting From $500</div>
+
+                <div class="t-card__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque, esse.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">2 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/bg-video.mp4" type="video/mp4" />
-            Your browser is not supported!
-          </video>
+          </article>
         </div>
       </section>
 
-      <!-- SECTION REVIEWS -->
-      <section class="reviews" id="reviews">
-        <div class="reviews-box section-container">
-          <div class="section-heading">
-            <h2 class="heading__secondary">Top Reviews</h2>
-          </div>
-
-          <div class="review">
-            <img src="./img/user-1.jpg" alt="user-1" class="review__photo" />
-            <div class="review__name">Christopher</div>
-            <div class="rating">
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-            </div>
-            <div class="review__content">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              voluptatibus non autem architecto.
-            </div>
-          </div>
-
-          <div class="review">
-            <img src="./img/user-2.jpg" alt="user-2" class="review__photo" />
-            <div class="review__name">Stefan</div>
-            <div class="rating">
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-            </div>
-            <div class="review__content">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              voluptatibus non autem architecto.
-            </div>
-          </div>
-
-          <div class="review hide">
-            <img src="./img/user-3.jpg" alt="user-3" class="review__photo" />
-
-            <div class="review__name">Alex</div>
-            <div class="rating">
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-              <img src="img/star.svg" alt="star" />
-            </div>
-
-            <div class="review__content">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              voluptatibus non autem architecto.
-            </div>
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offers">
+        <div class="container offer-box">
+          <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+          <div class="offer-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              Special Offer this month on our premium tours $250 Reguler $500
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis recusandae veritatis ab quos consectetur.
+              Exercitationem!
+            </p>
+            <button class="btn">book Now</button>
           </div>
         </div>
       </section>
 
-      <!-- SECTION CONTACT US -->
-      <section class="contact" id="contact">
-        <div class="contact-box section-container">
-          <div class="section-heading section-heading--white">
-            <h2 class="heading__secondary">Contact Us</h2>
-          </div>
+      <!-- SECTION REVIEW -->
+      <section class="section-review">
+        <div class="container review-box" data-aos="fade-up">
+          <header class="review-header">
+            <h3 class="color-blue">Our Reviews</h3>
+            <h2 class="heading heading--2">What the people say about us</h2>
+          </header>
 
-          <form class="form">
-            <input type="text" class="input" placeholder="Name" />
-            <input type="email" class="input" placeholder="Email" />
-            <button class="btn form-submit">Submit</button>
+          <article class="review-cards">
+            <div class="r-card">
+              <img
+                src="img/user-1.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">ANDROW</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                vitae.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+
+            <div class="r-card">
+              <img
+                src="img/user-2.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">LINA</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                vitae.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="heading heading--2 margin-bottom">Tourism</h2>
+          <ul class="contact-data">
+            <li class="location">100 Nallin Street, New Youk</li>
+            <li class="phone">+00 000 000 00</li>
+            <li class="email">Tourism@domine.com</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#offers">Offeres</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Popular Destination</div>
+          <ul>
+            <li><a href="#tours">Italy</a></li>
+            <li><a href="#tours">England</a></li>
+            <li><a href="#tours">India</a></li>
+            <li><a href="#tours">Spain</a></li>
+            <li><a href="#tours">Maldives</a></li>
+          </ul>
+        </nav>
+
+        <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            nisi!
+          </div>
+          <form class="newsletter__input">
+            <input type="text" placeholder="example@domine.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            />
           </form>
         </div>
-      </section>
 
-      <!-- SECTION FOOTER -->
-      <section class="footer" id="footer">
-        <footer class="footer-box section-container">
-          <nav class="footer-navigation" aria-label="footer">
-            <ul class="nav nav-grid">
-              <a href="#home" class="nav__link">
-                <li class="nav__item">Home</li>
-              </a>
-              <a href="#about" class="nav__link">
-                <li class="nav__item">About</li>
-              </a>
-              <a href="#tours" class="nav__link">
-                <li class="nav__item">Tours</li>
-              </a>
-              <a href="#contact" class="nav__link">
-                <li class="nav__item">Contact</li>
-              </a>
-            </ul>
-          </nav>
+        <div class="legel">
+          <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
+          <a href="https://github.com/Manoranjan-D/responsive-website-gym">
+            <img
+              src="img/github.svg"
+              alt="github"
+              class="github"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
 
-          <div class="legal">
-            <div class="legal__text">
-              Copyright &copy; by Manoranjan
-              <a
-                href="https://github.com/Manoranjan-D/responsive-website-tourism"
-                target="_blank"
-              >
-                <img src="img/github.svg" alt="github" class="github" />
-              </a>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </div>
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
   </body>
 </html>

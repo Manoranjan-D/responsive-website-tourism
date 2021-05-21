@@ -1,11 +1,11 @@
-## Tours&Travells - Responsive Tourism Website
+## Turismo - Responsive Tourism Website
 
-![](img/device-mockup.png)
+![](img/landing-page.png)
+
+### About Project
+
+Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.
 
 ### Live Demo
 
-[demo](https://responsive-tourism-website.netlify.app/)
-
-##
-
-![](img/full-screenshot.png)
+https://tourismo.netlify.app/

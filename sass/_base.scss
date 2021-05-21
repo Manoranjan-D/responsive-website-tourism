@@ -1,7 +1,18 @@
-//COLORS
-$color-primary: #03045e;
-$color-secondary: #023e8a;
-$color-grey-light: #edf0f2;
+:root {
+  --color-blue: #023c88;
+  --color-blue-lighter-1: #00b3d6;
+  --color-blue-lighter-2: #49cae4;
+
+  --color-gray-light: #f9fafb;
+  --color-gray-dark: #e9ecef;
+
+  --section-padding: clamp(4rem, 10vw, 12rem) 0rem;
+  --num-of-col: 2;
+
+  @media only screen and(max-width:50em) {
+    --num-of-col: 1;
+  }
+}
 
 *,
 *::before,
@@ -21,17 +32,12 @@ body {
   font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 .container {
-  display: grid;
-  max-width: 200rem;
-  min-width: 25rem;
-  margin: 0 auto;
-}
-
-.section-container {
-  margin: 8rem auto;
+  max-width: clamp(50rem, 85vw, 114rem);
+  height: 100%;
   padding: 0 2.4rem;
-  max-width: clamp(50rem, 85vw, 130rem);
+  margin: 0 auto;
 }

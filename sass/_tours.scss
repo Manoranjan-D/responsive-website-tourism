@@ -1,90 +1,72 @@
-.tours {
-  position: relative;
-
-  background-image: linear-gradient(
-    to right,
-    rgba($color-primary, 0.6),
-    rgba($color-secondary, 0.6)
-  );
+.section-tours {
+  background-color: var(--color-gray-light);
+  padding: var(--section-padding);
 }
 
-.tours-box {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  grid-gap: clamp(1.6rem, 4vw, 5rem);
-
-  @media only screen and (max-width: 62.5em) {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+.tour-box {
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
   }
 
-  @media only screen and (max-width: 35em) {
-    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 3rem;
   }
 }
 
-.tour {
-  height: 30rem;
-
-  &:hover &__content {
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0%);
-  }
-  &:hover &__img {
-    transform: scale(1.03);
-    border-left: 5px solid rgb(231, 214, 54);
-  }
+.t-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-bottom: 2.5rem;
+  color: #000;
 
   &__img {
-    background-position: center;
-    background-size: cover;
     max-width: 100%;
-    height: 100%;
-    border-left: 5px solid $color-primary;
-    transition: all 0.3s;
-
-    &--1 {
-      background-image: url('../img/north-india-lite.jpg');
-    }
-
-    &--2 {
-      background-image: url('../img/south-india-lite.jpg');
-    }
-
-    &--3 {
-      background-image: url('../img/nature-lite.jpg');
-    }
-
-    &--4 {
-      background-image: url('../img/adventures-lite.jpg');
-    }
-
-    &--5 {
-      background-image: url('../img/island-lite.jpg');
-    }
-
-    &--6 {
-      background-image: url('../img/international-lite.jpg');
-    }
+    height: auto;
   }
 
   &__content {
-    height: 30rem;
-    padding: 1.5rem;
-    background: linear-gradient(
-      to left bottom,
-      #ffaa4f,
-      #ffb86c,
-      #ffc689,
-      #ffd4a6,
-      #ffe2c4
-    );
-    clip-path: polygon(0 0, 100% 0%, 100% 0, 0 100%);
-    box-shadow: 0 2.5rem 2rem rgba(0, 0, 0, 0.5);
-    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2.4rem;
   }
 
   &__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+
+    & > * {
+      padding: 0.2rem 1rem;
+      background-color: var(--color-blue-lighter-2);
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
   }
 }

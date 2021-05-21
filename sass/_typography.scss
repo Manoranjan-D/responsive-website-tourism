@@ -1,27 +1,12 @@
-.heading__primary {
-  font-size: clamp(2rem, 4vw, 4rem);
-  letter-spacing: clamp(0.5rem, 1vw, 1.5rem);
-  color: #fff;
-  font-weight: 900;
-  text-transform: uppercase;
-
-  &--main {
-    display: block;
-    font-size: 100%;
-    text-align: center;
-  }
-
-  &--sub {
-    display: block;
-    font-size: 50%;
-    text-align: center;
-  }
-}
-
-.heading__secondary {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+.heading {
   font-weight: 700;
-
-  letter-spacing: clamp(0.3rem, 1vw, 1rem);
   text-transform: uppercase;
+
+  &--1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  &--2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
 }

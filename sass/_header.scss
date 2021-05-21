@@ -1,74 +1,60 @@
 .header {
-  height: 100vh;
-  background-image: linear-gradient(
-      to right,
-      rgba($color-primary, 0.6),
-      rgba($color-secondary, 0.6)
-    ),
-    url('../img/c.jpg');
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.heading {
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: auto;
-  padding: clamp(1rem, 4vw, 3rem);
-}
-
-.header-navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
+  position: absolute;
+  // background-color: var(--color-blue);
   color: #fff;
+  width: 100%;
+  z-index: 100;
 
-  @media only screen and (max-width: 40em) {
-    justify-content: flex-start;
-  }
-}
+  & .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.nav {
-  list-style: none;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #fff;
 
-  &__link {
-    text-decoration: none;
-    color: #fff;
-    padding: 2rem;
-    transition: background-color 0.5s;
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    &:hover {
-      background-color: $color-primary;
+      list-style: none;
+      font-size: 1.7rem;
+      font-weight: 700;
+
+      @media only screen and (max-width: 50em) {
+        display: none;
+      }
+
+      & li:not(:last-child) {
+        padding: 0rem 2.5rem;
+        transition: background-color 0.5s;
+
+        & a {
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: var(--color-blue-lighter-2);
+          }
+        }
+      }
+    }
+
+    & .logo {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 700;
     }
   }
-}
 
-.nav-flex {
-  display: flex;
-
-  @media only screen and (max-width: 40em) {
+  & .nav-icon {
     display: none;
+    border: 1px solid #fff;
+    padding: 0.1rem;
+
+    @media only screen and (max-width: 50em) {
+      display: block;
+    }
   }
-}
-
-.mobile__nav {
-  display: none;
-  padding: 1rem;
-  margin-left: 2rem;
-
-  @media only screen and (max-width: 40em) {
-    display: block;
-  }
-}
-
-.logo {
-  padding: 1rem;
-  font-weight: 900;
 }
