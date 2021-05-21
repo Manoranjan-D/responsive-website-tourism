@@ -8,4 +8,4 @@ Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete l
 
 ### Live Demo
 
-https://tourismo.netlify.app/
+https://turismo.netlify.app/

@@ -1,11 +1,11 @@
 {
-  "name": "advance_tours_travels",
+  "name": "Turismo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations",
   "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.css -o css/style.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
     "parcel": "parcel build index.html -d dist",
     "build": "npm run prefix:css && npm run parcel",
     "dev": "parcel index.html"
