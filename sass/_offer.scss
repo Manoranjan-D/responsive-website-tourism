@@ -31,10 +31,8 @@
     font-size: clamp(10rem, 20vw, 15rem);
   }
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
     gap: 2rem;
+    justify-items: flex-start;
   }
 }

@@ -15,12 +15,6 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-
     padding: 4rem 2.4rem;
     background-color: rgba(73, 202, 228, 0.1);
   }

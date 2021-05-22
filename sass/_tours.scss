@@ -5,11 +5,6 @@
 
 .tour-box {
   &__heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
     text-align: center;
     margin-bottom: 4rem;
   }
@@ -25,13 +20,9 @@
 }
 
 .t-card {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
   background-color: #fff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding-bottom: 2.5rem;
   color: #000;
 
   &:hover .t-card__img {
@@ -46,10 +37,11 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 2.4rem;
+    padding: 2.5rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__title {
